@@ -138,7 +138,7 @@ char menu(void)
   printf("%s", napisy[5]);
 	while (0==0)
 	{
-		wyb=getchar();
+		wyb=getc(stdin);
 		if ((wyb == 'w' || wyb == 'p' || wyb == 'k')) break;
 	}
 	return wyb;
