@@ -76,7 +76,7 @@ char menu(void)
 	int i;
 	char* napisy[6];
 	char wyb;
-	for (i=0; i<25; i++)
+    for (i=0; i<25; i++)
 	{
 		printf("\n");
 	}
@@ -139,28 +139,31 @@ char menu(void)
 	while (0==0)
 	{
 		wyb=getchar();
-		if ((wyb == 'w' || wyb == 'p' || wyb == 'k')) break;
+		if ((wyb == 'w' || wyb == 'W' || wyb == 'p' || wyb == 'P' || wyb == 'k' || wyb == 'K')) break;
 	}
 	return wyb;
 }
 
 int main(void)
 {
-	char wyb;
-	wyb = menu();
-	switch (wyb)
-	{
-		case 'w':
-			wypisanie();
-			break;
-		case 'p':
-			przyklad();
-			break;
-		case 'k':
-			break;
-		default:
-			printf("Co ty wybrales?\n");
-			break;
-	}
+	char wyb = 0;
+
+    while (wyb != 'k')
+    {
+        wyb = menu();
+        switch (wyb)
+	    {
+		    case 'w':
+            case 'W':
+			    wypisanie();
+			    break;
+		    case 'p':
+            case 'P':
+    			przyklad();
+	    		break;
+		    default:
+			    break;
+	    }
+    }
 	return 0;
 }
