@@ -7,7 +7,7 @@ void wczytaj(int tab[], int dl)
     for (i=0; i<dl; i++)
     {
         printf("Podaj wage %i towaru (w kg): ", i+1);
-        scanf("%d", tab[i]);
+        scanf("%d", &tab[i]);
     }
 }
 
@@ -48,9 +48,9 @@ void wypisz_srednia(int tab[], int dl)
 int main(void)
 {
     int tab[10];
-    wczytaj(tab[], 10);
-    wypisz_tab(tab[], 10);
-    wypisz_srednia(tab[], 10);
-    wypisz_odbiegajace(tab[], 10);
+    wczytaj(tab, 10);
+    wypisz_tab(tab, 10);
+    wypisz_srednia(tab, 10);
+    wypisz_odbiegajace(tab, 10);
     return 0;
 }
