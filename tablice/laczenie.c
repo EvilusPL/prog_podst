@@ -12,13 +12,18 @@ void polacz(char s[], char d[]) {
     }
 }
 
+void polacz2(char *s, char *d) {
+    while (*++d!='\0');
+    while (*d++=*s++);
+}
+
 int main(void) {
     char s[100]="Ala ma kota";
     char d[100]="Wlazl kotek na plotek";
     printf("Przed laczeniem:\n");
     printf("s = %s\n", s);
     printf("d = %s\n", d);
-    polacz(s, d);
+    polacz2(s, d);
     printf("Po laczeniu:\n");
     printf("s = %s\n", s);
     printf("d = %s\n", d);
