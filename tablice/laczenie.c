@@ -22,4 +22,5 @@ int main(void) {
     printf("Po laczeniu:\n");
     printf("s = %s\n", s);
     printf("d = %s\n", d);
+    return 0;
 }
