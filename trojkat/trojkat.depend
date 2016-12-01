@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1480576343 source:/home/jaro/Dokumenty/Studia/Podstawy programowania/programy/REPOGIT/prog_podst/trojkat/main.c
+	<stdio.h>
+	<stdlib.h>
+
