@@ -9,21 +9,21 @@ void sortuj(int a, int b, int c, int tab[])
         b = a;
         a = pom;
     }
-    if (a>c)
-    {
-        pom = c;
-        c = a;
-        a = pom;
-    }
     if (b>c)
     {
         pom = c;
         c = b;
         b = pom;
     }
-	tab[0] = a;
-	tab[1] = b;
-	tab[2] = c;
+    if (a>c)
+    {
+        pom = c;
+        c = a;
+        a = pom;
+    }
+    tab[0] = a;
+    tab[1] = b;
+    tab[2] = c;
 }
 
 int main(void)
