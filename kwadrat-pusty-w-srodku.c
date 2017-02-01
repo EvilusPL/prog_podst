@@ -3,7 +3,7 @@
 
 int main()
 {
-    int a, b, i, j;
+    int a, b, i, j, c = 0;
     printf("Podaj kolumny: \n");
     scanf("%d", &a);
     printf("Podaj wiersze: \n");
@@ -15,6 +15,7 @@ int main()
                 if(i==1 || i==a || j==1 || j==b)
                 {
                     printf("*");
+                    c++;
                 }
                 else
                 {
@@ -23,7 +24,6 @@ int main()
             }
             printf("\n");
         }
-
-
-    return (2*i+2*j-8);
+    printf("Uzyto %d gwiazdek do narysowania tej figury\n", %c);
+    return 0;
 }
