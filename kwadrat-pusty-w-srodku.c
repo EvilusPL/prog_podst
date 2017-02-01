@@ -24,6 +24,6 @@ int main()
             }
             printf("\n");
         }
-    printf("Uzyto %d gwiazdek do narysowania tej figury\n", %c);
+    printf("Uzyto %d gwiazdek do narysowania tej figury\n", c);
     return 0;
 }
